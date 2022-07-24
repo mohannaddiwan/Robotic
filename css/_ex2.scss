@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Newsreader", serif;
+    color: white;
+    background-color: var(--body-color);
+transition: all .5s ease-in;
+
+}
+
+.home {
+
+    .container {
+        .row {
+            .col {
+                .ExImg {
+                    width: 100%;
+                    padding: 10px;
+                    margin-top: 30px;
+                    height: 170px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 4px;
+                    }
+                }
+
+                .go {
+
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    bottom: 35px;
+                    color: black;
+                    cursor: pointer;
+                    @media #{$mMobile} {
+                        bottom: 25px;
+                        }
+
+                    a {
+                        border-radius: 6px;
+                        background-color: #027f94;
+                        width: 100%;
+                        padding: 10px 35px 9px;
+                        color: black;
+                        font-weight: 700;
+                        @media #{$mMobile} {
+                            padding: 8px 21px 7px;
+                            font-size: .75rem;
+                           
+                            }
+                       
+
+
+                        &:hover {
+                            background-color: #f89c00;
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+.title{
+    margin-top: 175px;
+    padding: 20px;
+    margin-bottom: 50px;
+    .container{
+        @media #{$minSmall} {
+            padding-left: 40px;
+      
+        }
+       
+        .tx{
+            text-align: center;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    margin-left: 4%;
+    margin-right: 3%;
+    h1{
+    @media #{$mMobile} {
+        font-size: 16px;
+   
+     }}
+        }
+    }
+}
